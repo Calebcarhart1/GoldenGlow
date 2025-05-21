@@ -521,3 +521,21 @@ section {
     font-style: italic;
     /* Optional: adds emphasis */
 }
+
+/* Skip Link Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    /* Positioned off-screen */
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+    /* Bring it on-screen when focused */
+}
